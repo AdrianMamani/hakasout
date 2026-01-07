@@ -1,7 +1,18 @@
-const GroupCard = ({ image, groupName, owner }) => {
+const GroupCard = ({ image, groupName, owner, onClick }) => {
   return (
-    <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
-      
+    <div
+      onClick={onClick}
+      className="
+        bg-white
+        rounded-xl
+        shadow-md
+        overflow-hidden
+        cursor-pointer
+        transition
+        hover:shadow-lg
+        hover:-translate-y-1
+      "
+    >
       {/* Imagen */}
       <div className="h-48 w-full">
         <img

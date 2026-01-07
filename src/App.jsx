@@ -5,6 +5,7 @@ import UserLayout from "./components/layouts/UserLayout";
 
 // User pages
 import Grupos from "./pages/users/grupos/UsersGrupos";
+import GruposDetails from "./pages/users/grupos-details/UsersGruposDetails";
 
 
 // Admin pages
@@ -18,6 +19,7 @@ function App() {
         {/* RUTAS USUARIO */}
         <Route element={<UserLayout />}>
           <Route path="/grupos" element={<Grupos />} />
+          <Route path="/grupos-details" element={<GruposDetails />} />
         </Route>
 
         {/* RUTAS ADMIN 

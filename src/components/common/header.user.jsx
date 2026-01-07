@@ -17,9 +17,7 @@ const MobileHeader = ({ onMenuClick }) => {
       
       {/* Header */}
       <div
-        className={`relative h-15 flex items-center px-4 rounded-bl-[32px] transition-colors duration-300
-          ${scrolled ? "bg-black" : "bg-[#2CE6E6]"}
-        `}
+        className="relative h-15 flex items-center px-4 rounded-bl-[32px] bg-[#3895FF]"
       >
         
         {/* Botón hamburguesa */}
@@ -30,9 +28,7 @@ const MobileHeader = ({ onMenuClick }) => {
           <img
             src="/hamburguesa.png"
             alt="Menú"
-            className={`h-8 w-8 transition duration-300 ${
-              scrolled ? "invert" : ""
-            }`}
+            className={`h-8 w-8 transition duration-300 `}
           />
         </button>
 
